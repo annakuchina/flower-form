@@ -22,7 +22,7 @@
     }
     
     &--blue {
-        background-color: $mainBlue;
+        background-color: $mainGreen;
         color: #FFF;
     }
 

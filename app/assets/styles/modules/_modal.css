@@ -38,7 +38,7 @@
         transform: scaleX(1.2);
         transform-origin: 100% 0;
         cursor: pointer;
-        color: $mainBlue;
+        color: $mainGreen;
         transition: all 0.3s ease-in-out;
 
         &:hover {
