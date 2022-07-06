@@ -12,6 +12,20 @@
     &__main-flower {
         max-height: 80vh;
         margin-top: 10vh;
+        float: right;
+        margin-right: 80px;
+    }
+
+    &__red-leaves-bottom {
+        position: relative;
+        margin-top: 30px;
+        margin-right: 10vw;
+        width: 125px;
+    }
+
+    &__red-leaves-top {
+        width: 350px;
+        margin-left: -200px;
     }
 
     &__text-content {
@@ -24,6 +38,7 @@
 
     &__title {
         font-weight: 300;
+        float: left;
         color: #FFF;
         margin: 0;
         font-size: 2.4rem;
