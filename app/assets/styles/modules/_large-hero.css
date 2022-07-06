@@ -1,18 +1,22 @@
 .large-hero {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.8fr;
     background-color: #156165;
     z-index: -2;
 
     &__background {
         grid-column: 1;
-        grid-row: 1;
+    }
+
+    &__main-flower {
+        max-height: 80vh;
+        margin-top: 10vh;
     }
 
     &__text-content {
         align-self: center;
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 1;
         padding-top: 60px;
         text-align: center;
