@@ -1,0 +1,54 @@
+.btn--rhombus {
+  display: inline-block;
+  position:relative;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  z-index: 0;
+
+
+  &__left:before {
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg);
+  }
+
+  &___left:hover:before {
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: orange;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    -webkit-backface-visibility: hidden;
+  }
+
+
+
+}
+
+html, body {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+// #btn container
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
