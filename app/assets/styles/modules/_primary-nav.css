@@ -32,7 +32,7 @@
             background-color: transparent;
 
             &.is-current-link {
-                color: $mainGreen;
+                color: $darkGreen;
             }
         }
     }
