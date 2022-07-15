@@ -1,31 +1,34 @@
 .headline {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    color: $mainGreen;
+    color: $brightPurple;
+    font-family: 'Berkshire Swash', cursive;
+    
 
     @mixin atSmall {
-        font-size: 2.875rem;
+        font-size: 5rem;
     }
 
     &--centered {
         text-align: center;
     }
 
-    &--orange {
-        color: $mainOrange;
+    &--lighterDarkGreen {
+        color: $lighterDarkGreen;
     }
 
     &--small {
         font-size: 1.2rem;
+        font-family: 'Gantari', sans-serif;
 
         @mixin atSmall {
-            font-size: 1.875rem;
+            font-size: 1.7rem;
         }
 
     }
 
     &--narrow {
-        max-width: 500px;
+        max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -43,7 +46,7 @@
     }
 
     &--b-margin-large {
-        margin-bottom: 1.6em;
+        margin-bottom: 1.8em;
     }
 
     &--no-t-margin {

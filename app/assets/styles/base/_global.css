@@ -3,13 +3,9 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gantari', sans-serif;
+    letter-spacing: 0.05rem;
     color: #333;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 * {
