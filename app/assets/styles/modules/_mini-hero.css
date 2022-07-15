@@ -2,7 +2,11 @@
     height: 300px;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr;
+
+    @mixin atExtraLarge {
+        height: auto;
+        margin-bottom: -150px;
+    }
 
     &__first-half-image {
         grid-column: 1;
@@ -10,5 +14,13 @@
 
     &__second-half-image {
         grid-column: 2;
+    }
+
+    &__flower {
+        max-width: 45vw;
+        max-height: 35vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
