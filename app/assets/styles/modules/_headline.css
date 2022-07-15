@@ -1,8 +1,7 @@
 .headline {
     font-size: 1.6rem;
     font-weight: 300;
-    color: $brightPurple;
-    font-family: 'Berkshire Swash', cursive;
+    color: $lighterDarkGreen;
     
 
     @mixin atSmall {
@@ -19,7 +18,6 @@
 
     &--small {
         font-size: 1.2rem;
-        font-family: 'Gantari', sans-serif;
 
         @mixin atSmall {
             font-size: 1.7rem;
