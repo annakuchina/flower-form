@@ -1,0 +1,14 @@
+.mini-hero {
+    height: 300px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &__first-half-image {
+        grid-column: 1;
+    }
+
+    &__second-half-image {
+        grid-column: 2;
+    }
+}
