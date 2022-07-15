@@ -1,6 +1,6 @@
 .mini-hero {
     height: 300px;
-    width: 100vw;
+    width: auto;
     display: grid;
 
     @mixin atExtraLarge {
