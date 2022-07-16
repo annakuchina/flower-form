@@ -6,14 +6,21 @@
         padding-left: 94px;
     }
 
-    &__icon {
+    &__number {
         display: block;
         margin: 0 auto;
+        font-size: 5rem;
+        color: $brightWarmPurple;
+        font-family: 'Berkshire Swash', cursive;
 
         @mixin atSmall {
             position: absolute;
             left: 0;
         }
+    }
+
+    &__smaller-number {
+        font-size: 4.5rem;
     }
 
     &__title {

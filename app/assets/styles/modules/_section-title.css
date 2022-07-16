@@ -9,6 +9,14 @@
         color: $brightPurple;
     }
 
+    &--warmer-purple {
+        color: $brightWarmPurple;
+    }
+
+    &--bright-green {
+        color: $brightGreen;
+    }
+
     &--red {
         color: $brightRed;
     }

@@ -7,6 +7,12 @@
     margin-right: auto;
     padding-bottom: 50px;
 
+    &--testimonials {
+        background-color: $lightGreen;
+        padding-top: 65px;
+        padding-bottom: 25px;
+    }
+
     &--medium {
         max-width: 976px;
     }
