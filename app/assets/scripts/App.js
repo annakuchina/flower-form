@@ -14,7 +14,6 @@ let modal;
 
 document.querySelectorAll(".open-modal").forEach(el => {
     el.addEventListener("click", e => {
-        console.log("JNSDKJDNSF")
         e.preventDefault();
         if (typeof modal == "undefined") {
             import(/* webpackChunkName: "modal" */ './modules/Modal').then(x => {

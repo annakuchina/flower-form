@@ -4,28 +4,29 @@
     padding: 0;
     display: inline-block;
 
-    &--orange {
-        background-color: #d59541;
+    &--green {
+        background-color: $brightGreen;
     }
 
     &--large {
-        padding: 1.1rem 1.9rem;
+        padding: 25px 35px;
+        font-size: 1.4rem;
+        position: relative;
 
         @mixin atSmall {
             font-size: 1.25rem;
         }
     }
 
+
+
     &--rhombus {
-        position: relative;
         float: left;
         margin-left: 3rem;
         margin-top: 10px;
-        padding: 25px 35px;
         color: white;
         text-decoration: none;
         z-index: 0;
-        font-size: 1.4rem;
     }
 
     &--rhombus:before {
@@ -52,6 +53,13 @@
         -moz-transform: skewX(-20deg);
         -ms-transform: skewX(-20deg);
         transform: skewX(-20deg);
+    }
+
+    &--small {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        position: absolute;
+        margin-top: -10px;
     }
 
 }

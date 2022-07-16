@@ -28,6 +28,10 @@
         display: block;
     }
 
+    &__footer-plant {
+        max-width: 25vw;
+    }
+
     &__smaller-item {
         max-width: 28vw;
     }
