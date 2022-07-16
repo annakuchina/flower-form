@@ -8,12 +8,16 @@
         margin-bottom: -150px;
     }
 
-    &__first-half-image {
+    &__first-image {
         grid-column: 1;
     }
 
-    &__second-half-image {
+    &__second-image {
         grid-column: 2;
+    }
+
+    &__third-image {
+        grid-column: 3;
     }
 
     &__flower {

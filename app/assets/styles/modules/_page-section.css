@@ -26,4 +26,8 @@
         color: #FFF;
     }
 
+    &--orange {
+        background-color: $lightOrange;
+    }
+
 }

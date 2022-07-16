@@ -22,4 +22,8 @@
         margin-top: 0;
     }
 
+    &--more-padding {
+        padding-top: 100px;
+    }
+
 }
