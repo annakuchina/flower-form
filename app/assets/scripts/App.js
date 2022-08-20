@@ -2,7 +2,7 @@ import '../styles/styles.css';
 import 'lazysizes'
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
-import StickyHeader from './modules/StickyHeader'
+import StickyHeader from './modules/stickyheader'
 
 new StickyHeader();
 new RevealOnScroll(document.querySelectorAll(".process-item"), 75);
