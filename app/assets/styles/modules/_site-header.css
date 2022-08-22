@@ -1,6 +1,6 @@
 .site-header {
     padding: 17px 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 4rem;
     z-index: 2;
@@ -9,13 +9,9 @@
     &--is-expanded {
         background-color: rgba(62, 189, 97, 0.55);
     }
-    
-    @mixin atMedium {
-        position: fixed;
 
-        &--dark {
-            background-color: #3ebd61;;
-        }
+    &--dark {
+        background-color: #3ebd61;
     }
 
     &__btn-container {
