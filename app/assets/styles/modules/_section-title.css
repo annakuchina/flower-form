@@ -34,4 +34,9 @@
         padding-top: 100px;
     }
 
+    &--less-padding {
+        padding-top: 30px;
+    }
+
+
 }

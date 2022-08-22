@@ -7,9 +7,18 @@
         margin-bottom: 1rem;
     }
 
-    &__white-bg {
+    &__white {
         background-color: white;
     }
+
+    &__bottom-padding {
+        padding-bottom: 3em;
+    }
+
+    &__top-padding {
+        padding-top: 1em;
+    }
+
 
     @mixin atMedium {
         display: grid;

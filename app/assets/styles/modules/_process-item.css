@@ -1,6 +1,6 @@
 .process-item {
     position: relative;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1em;
     margin-right: 25px;
 
     @mixin atSmall {
@@ -11,7 +11,8 @@
         display: block;
         margin: 0 auto;
         font-size: 5rem;
-        color: $brightWarmPurple;
+        color: $darkRed;
+        padding-left: 30px;
         font-family: 'Berkshire Swash', cursive;
 
         @mixin atSmall {
@@ -30,10 +31,11 @@
         margin-top: 0.7rem;
         margin-bottom: 0.8rem;
         text-align: center;
+        color: $brightRed;
 
         @mixin atSmall {
             text-align: left;
-            margin-top: 1em;
+            margin-top: 1.5em;
             font-size: 1.875rem;
         }
 

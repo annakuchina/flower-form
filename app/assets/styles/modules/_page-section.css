@@ -5,6 +5,10 @@
         padding: 4.5rem 0;
     }
 
+    &__second {
+        padding: 1.2rem 0;
+    }
+
     &--no-b-padding-until-medium {
         padding-bottom: 0;
 
