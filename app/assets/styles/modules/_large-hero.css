@@ -1,24 +1,44 @@
 .large-hero {
     height: 100vh;
-    display: grid;
-    grid-template-columns: 0.8fr;
+    display: block;
     background-color: #156165;
     z-index: -2;
+
+    @mixin atLarge {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-columns: 0.8fr;
+    }
 
     &__background {
         grid-column: 1;
     }
 
     &__main-flower {
-        font-size: 6rem;
-        max-height: 75vh;
-        margin-top: 12.5vh;
-        float: right;
-        padding-left: 75px;
-        padding-right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 6vh;
+        width: 350px;
 
+        @mixin atMedium {
+            padding-top: 13vh;
+        }
+        
+        @mixin atLarge {
+            max-height: 75vh;
+            width: auto;
+            transform: none;  
+            margin-top: 12.5vh;
+            float: right;
+            padding-right: 0px;
+            padding-left: 8vw;
+            padding-top: 0;
+        }
+        
         @mixin atMedLarge {
             padding-right: 2vw;
+            padding-left: 75px;
         }
     }
 
@@ -32,12 +52,16 @@
         @mixin atMedLarge {
             visibility: visible;
         }
-
     }
 
     &__red-leaves-top {
         width: 300px;
         margin-left: -100px;
+        visibility: hidden;
+
+        @mixin atLarge {
+            visibility: visible;
+        }
 
         @mixin atMedLarge {
             width: 350px;
@@ -47,10 +71,16 @@
 
     &__text-content {
         align-self: center;
-        grid-column: 2;
-        grid-row: 1;
-        padding-top: 15vh;
+        padding-top: 0;
         text-align: center;
+        margin-top: -80px;
+
+        @mixin atLarge {
+            margin-top: 0;
+            grid-column: 2;
+            grid-row: 1;
+            padding-top: 15vh;
+        }
 
         @mixin atMedLarge {
             padding-top: 60px;
@@ -63,11 +93,19 @@
         float: left;
         color: #FFF;
         margin: 0;
-        font-size: 2.4rem;
+        font-size: 4rem;
         font-family: 'Berkshire Swash', cursive;
-        width: 450px;
+        width: 100%;
+        margin-top: -90px;
+        
         @mixin atSmall {
-            font-size: 6rem;
+            font-size: 5rem;
+            margin-top: -100px;
+        }
+
+        @mixin atLarge {
+            width: 450px;
+            margin-top: 0px;
         }
 
         @mixin atMedLarge {
@@ -99,4 +137,13 @@
             font-size: 1.875rem;
         }
     }
+
+    &__button {
+        padding-top: 40px;
+
+        @mixin atLarge {
+            padding-top: 0;
+        }
+    }
+
 }
