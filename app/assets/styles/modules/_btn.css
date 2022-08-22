@@ -22,11 +22,16 @@
 
     &--rhombus {
         float: left;
-        margin-left: 3rem;
-        margin-top: 10px;
+        margin-top: 25px;
+        margin-left: 150px;
         color: white;
         text-decoration: none;
         z-index: 0;
+
+        @mixin atMedLarge {
+            margin-top: 10px;
+            margin-left: 3rem;
+        }
     }
 
     &--rhombus:before {

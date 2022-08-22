@@ -10,10 +10,16 @@
     }
 
     &__main-flower {
-        max-height: 80vh;
-        margin-top: 10vh;
+        font-size: 6rem;
+        max-height: 75vh;
+        margin-top: 12.5vh;
         float: right;
-        margin-right: 80px;
+        padding-left: 75px;
+        padding-right: 0px;
+
+        @mixin atMedLarge {
+            padding-right: 2vw;
+        }
     }
 
     &__red-leaves-bottom {
@@ -21,19 +27,35 @@
         margin-top: 30px;
         margin-right: 10vw;
         width: 125px;
+        visibility: hidden;
+
+        @mixin atMedLarge {
+            visibility: visible;
+        }
+
     }
 
     &__red-leaves-top {
-        width: 350px;
-        margin-left: -200px;
+        width: 300px;
+        margin-left: -100px;
+
+        @mixin atMedLarge {
+            width: 350px;
+            margin-left: -150px;
+        }
     }
 
     &__text-content {
         align-self: center;
         grid-column: 2;
         grid-row: 1;
-        padding-top: 60px;
+        padding-top: 15vh;
         text-align: center;
+
+        @mixin atMedLarge {
+            padding-top: 60px;
+        }
+
     }
 
     &__title {
@@ -43,8 +65,13 @@
         margin: 0;
         font-size: 2.4rem;
         font-family: 'Berkshire Swash', cursive;
+        width: 450px;
         @mixin atSmall {
             font-size: 6rem;
+        }
+
+        @mixin atMedLarge {
+            width: 500px;
         }
     }
 

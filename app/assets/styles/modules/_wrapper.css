@@ -42,6 +42,16 @@
         }
     }
 
+    &--no-padding-until-medlarge {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atMedLarge {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+
     &--no-padding-until-large {
         padding-left: 0;
         padding-right: 0;
