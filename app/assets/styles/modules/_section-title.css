@@ -2,7 +2,6 @@
     font-size: 2.55rem;
     font-weight: 300;
     text-align: center;
-    color: $brightPurple;
     font-family: 'Berkshire Swash', cursive;
 
     &--purple {
@@ -19,6 +18,10 @@
 
     &--red {
         color: $brightRed;
+    }
+
+    &--orange {
+        color: $brightOrange;
     }
 
     @mixin atSmall {

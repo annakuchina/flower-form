@@ -34,7 +34,13 @@ class Modal {
         document.body.insertAdjacentHTML('beforeend', `
         <div class="modal">
     <div class="modal__inner">
-      <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
+    <picture>
+        <source srcset="assets/images/chilli-plant.png 640w, assets/images/chilli-plant.png 3840w" media="(min-width: 1380px)">
+        <!-- <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+        <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">  -->
+        <img class="modal__picture" srcset="assets/images/chilli-plant.png 640w, assets/images/chilli-plant.png 1280w" alt="Flower Form blue conditioner bottle with circular tactile indicators">
+    </picture>
+      <h2 class="section-title section-title--orange section-title--less-margin">Get in touch</h2>
       <div class="wrapper wrapper--narrow">
         <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
       </div>

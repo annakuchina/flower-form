@@ -8,7 +8,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.94);
+    background-color: rgba(255, 255, 255, 0.99);
     z-index: 5;
     display: flex;
 
@@ -21,6 +21,11 @@
     &__inner {
         flex: 1;
         margin: auto;
+        text-align: center;
+    }
+
+    &__picture {
+        width: 225px;
     }
 
     &__description {
@@ -42,7 +47,7 @@
         transition: all 0.3s ease-in-out;
 
         &:hover {
-            color: $mainOrange;
+            color: $brightOrange;
         }
     }
 }
