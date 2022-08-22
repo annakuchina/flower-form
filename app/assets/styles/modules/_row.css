@@ -7,6 +7,10 @@
         margin-bottom: 1rem;
     }
 
+    &__white-bg {
+        background-color: white;
+    }
+
     @mixin atMedium {
         display: grid;
         grid-template-columns: repeat(12, 1fr);

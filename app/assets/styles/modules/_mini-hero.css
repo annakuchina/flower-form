@@ -10,6 +10,7 @@
 
     &__first-image {
         grid-column: 1;
+        padding-top: 30px;
     }
 
     &__second-image {
@@ -20,12 +21,20 @@
         grid-column: 3;
     }
 
-    &__flower {
+    &__flower { 
         max-width: 45vw;
+        max-width: 550px;
         max-height: 35vw;
         margin-left: auto;
         margin-right: auto;
         display: block;
+        padding-bottom: 60px;
+    }
+
+    &__product-flower {
+        max-width: 500px;
+        max-height: none;
+        height: auto;
     }
 
     &__footer-plant {

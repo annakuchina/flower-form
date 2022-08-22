@@ -32,7 +32,12 @@
             background-color: transparent;
 
             &.is-current-link {
-                color: $darkGreen;
+                text-decoration: underline;
+                animation: fadeOut 8s;
+                -webkit-animation: fadeOut 8s;
+                -moz-animation: fadeOut 8s;
+                -o-animation: fadeOut 8s;
+                -ms-animation: fadeOut 8s;
             }
         }
     }

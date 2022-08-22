@@ -12,8 +12,8 @@
         text-align: center;
     }
 
-    &--lighterDarkGreen {
-        color: $lighterDarkGreen;
+    &--darkGrey {
+        color: $darkGrey;
     }
 
     &--small {

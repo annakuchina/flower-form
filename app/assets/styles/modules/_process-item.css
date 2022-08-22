@@ -1,6 +1,7 @@
 .process-item {
     position: relative;
     padding-bottom: 2.5rem;
+    margin-right: 25px;
 
     @mixin atSmall {
         padding-left: 94px;
@@ -36,5 +37,10 @@
             font-size: 1.875rem;
         }
 
+    }
+
+    &__picture {
+        width: 400px;
+        border-radius: 10px;
     }
 }
