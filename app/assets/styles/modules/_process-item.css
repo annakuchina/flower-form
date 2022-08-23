@@ -1,11 +1,18 @@
 .process-item {
     position: relative;
     padding-bottom: 1em;
-    margin-right: 25px;
-    margin-left: -50px;
+    margin-right: 0;
+    width: 100vw;
+    text-align: center;
+    margin-top: -20px;
 
-    @mixin atSmall {
+
+    @mixin atLarge {
+        text-align: left;
+        margin-top: 0;
         padding-left: 9.8vw;
+        margin-right: 25px;
+        margin-left: -50px;
     }
 
     @mixin atMedLarge {
@@ -13,8 +20,12 @@
     }
 
     &__first {
-        margin-left: -5px;
-        padding-left: 12vw;
+        margin-left: 0;
+        padding-left: 0;
+        @mixin atLarge {
+            margin-left: -5px;
+            padding-left: 12vw;
+        }
         @mixin atMedLarge {
             margin-left: 0;
             padding-left: 94px;
@@ -30,8 +41,18 @@
         font-family: 'Berkshire Swash', cursive;
 
         font-size: 3rem;
-        padding-top: 20px;
-        padding-left: 60px;
+        padding-top: 10px;
+
+        padding-left: 0;
+        padding-right: 0;
+        width: 100vw;
+
+        @mixin atLarge {
+            padding-top: 0;
+            text-align: left;
+            padding-left: 60px;
+            text-align: left;
+        }
 
         @mixin atMedLarge {
             font-size: 5rem;
@@ -46,7 +67,12 @@
     }
 
     &__first-number {
-        padding-left: 95px;
+        padding-left: 0;
+
+        @mixin atLarge {
+            padding-left: 95px;
+        }
+        
         @mixin atMedLarge {
             padding-left: 40px;
         }
@@ -54,11 +80,14 @@
 
     &__smaller-number {
         font-size: 2.5rem;
-        padding-top: 22px;
+        padding-top: 12px;
+
+        @mixin atLarge {
+            padding-top: 0;
+        }
         
         @mixin atMedLarge {
             font-size: 4.5rem;
-            padding-top: 0;
         }
     }
     
@@ -66,16 +95,26 @@
     &__title {
         font-size: 1.6rem;
         font-weight: 300;
-        margin-top: 0.7rem;
+        
         margin-bottom: 0.8rem;
-        text-align: center;
         color: $brightRed;
         max-width: 390px;
+        padding-top: 80px;
+
+        margin-left: auto;
+        margin-right: auto;
 
         @mixin atSmall {
-            text-align: left;
             margin-top: 1.5em;
             font-size: 1.875rem;
+        }
+
+        @mixin atLarge {
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 0;
+            text-align: left;
+            margin-top: 0.7rem;
         }
 
         @mixin atMedLarge {
@@ -87,7 +126,18 @@
     }
 
     &__paragraph {
-        max-width: 390px;
+        max-width: 400px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+
+        @mixin atLarge {
+            margin-left: 0!important;
+            margin-right: 0!important;
+            text-align: left;
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 390px;
+        }
         
         @mixin atMedLarge {
             max-width: 450px;
@@ -97,6 +147,10 @@
     &__picture {
         border-radius: 10px;
         width: 370px;
+
+        @mixin atLarge {
+            text-align: left;
+        }
 
         @mixin atMedLarge {
             width: 400px;

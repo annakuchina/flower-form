@@ -19,6 +19,12 @@
         padding-top: 1em;
     }
 
+    &__testimonial {
+        max-width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 
     @mixin atMedium {
         display: grid;

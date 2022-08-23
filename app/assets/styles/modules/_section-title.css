@@ -4,7 +4,8 @@
     text-align: center;
     font-family: 'Berkshire Swash', cursive;
 
-    
+    padding-top: 0;
+    margin-top: 0;
 
     &--purple {
         color: $brightPurple;
@@ -30,6 +31,8 @@
         font-size: 5rem;
     }
 
+    
+
     &--less-margin {
         margin-bottom: 1.3rem;
         margin-top: 0;
@@ -47,7 +50,9 @@
     }
 
     &--less-padding {
-        padding-top: 30px;
+        @mixin atLarge {
+            padding-top: 30px; 
+        }   
     }
 
 
