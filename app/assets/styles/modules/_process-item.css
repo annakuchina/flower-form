@@ -2,18 +2,42 @@
     position: relative;
     padding-bottom: 1em;
     margin-right: 25px;
+    margin-left: -50px;
 
     @mixin atSmall {
+        padding-left: 9.8vw;
+    }
+
+    @mixin atMedLarge {
         padding-left: 94px;
+    }
+
+    &__first {
+        margin-left: -5px;
+        padding-left: 12vw;
+        @mixin atMedLarge {
+            margin-left: 0;
+            padding-left: 94px;
+        }
     }
 
     &__number {
         display: block;
         margin: 0 auto;
         font-size: 5rem;
-        color: $darkRed;
+        color: $brightRed;
         padding-left: 30px;
         font-family: 'Berkshire Swash', cursive;
+
+        font-size: 3rem;
+        padding-top: 20px;
+        padding-left: 60px;
+
+        @mixin atMedLarge {
+            font-size: 5rem;
+            padding-top: 0;
+            padding-left: 30px;
+        }
 
         @mixin atSmall {
             position: absolute;
@@ -21,9 +45,23 @@
         }
     }
 
-    &__smaller-number {
-        font-size: 4.5rem;
+    &__first-number {
+        padding-left: 95px;
+        @mixin atMedLarge {
+            padding-left: 40px;
+        }
     }
+
+    &__smaller-number {
+        font-size: 2.5rem;
+        padding-top: 22px;
+        
+        @mixin atMedLarge {
+            font-size: 4.5rem;
+            padding-top: 0;
+        }
+    }
+    
 
     &__title {
         font-size: 1.6rem;
@@ -32,6 +70,7 @@
         margin-bottom: 0.8rem;
         text-align: center;
         color: $brightRed;
+        max-width: 390px;
 
         @mixin atSmall {
             text-align: left;
@@ -39,10 +78,32 @@
             font-size: 1.875rem;
         }
 
+        @mixin atMedLarge {
+            max-width: 450px;
+            margin-left: 0;
+            margin-top: 1.5em;
+        }
+
+    }
+
+    &__paragraph {
+        max-width: 390px;
+        
+        @mixin atMedLarge {
+            max-width: 450px;
+        }
     }
 
     &__picture {
-        width: 400px;
         border-radius: 10px;
+        width: 370px;
+
+        @mixin atMedLarge {
+            width: 400px;
+        }
+    }
+
+    &__green-border {
+        border: $warmGreen 3px solid;
     }
 }

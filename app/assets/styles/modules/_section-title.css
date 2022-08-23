@@ -4,6 +4,8 @@
     text-align: center;
     font-family: 'Berkshire Swash', cursive;
 
+    
+
     &--purple {
         color: $brightPurple;
     }
@@ -35,6 +37,13 @@
 
     &--more-padding {
         padding-top: 100px;
+    }
+
+    &--more-padding-until-extra-large {
+        padding-top: 250px;
+        @mixin atExtraLarge {
+            padding-top: 100px;
+        }
     }
 
     &--less-padding {
