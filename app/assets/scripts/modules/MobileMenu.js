@@ -1,3 +1,4 @@
+
 class MobileMenu {
     constructor() {
         this.menuIcon = document.querySelector(".site-header__menu-icon")
@@ -8,7 +9,10 @@ class MobileMenu {
     }
 
     events() {
-        this.menuIcon.addEventListener("click", () => this.toggleTheMenu())
+        this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
+        window.addEventListener("resize", () => this.displayWindowSize());
+        // window.addEventListener("resize", displayWindowSize);
+
     }
 
     toggleTheMenu() {
@@ -17,9 +21,19 @@ class MobileMenu {
         this.menuIcon.classList.toggle("site-header__menu-icon--close-x");
         this.headerLinks.forEach(el => el.classList.toggle("site-header-link--expanded"))  
     }
+
+    displayWindowSize(){
+        // Get width of the window excluding scrollbars
+        var siteHeader = document.querySelector(".site-header")
+        var windowWidth = document.documentElement.clientWidth;
+        if (windowWidth>799) {
+            if (siteHeader.classList.contains("site-header--is-expanded") == true) {
+                this.toggleTheMenu();
+            }
+        }
+    }
 }
 
 export default MobileMenu;
-
 
 

@@ -22,10 +22,11 @@
         flex: 1;
         margin: auto;
         text-align: center;
+        margin-top: 80px;
     }
 
     &__picture {
-        width: 225px;
+        width: 200px;
     }
 
     &__description {
@@ -33,6 +34,11 @@
         font-size: 1.3rem;
         font-weight: 300;
         line-height: 1.65;
+    }
+
+    &__icons {
+        font-size: 80px;
+        margin-top: -50px;
     }
 
     &__close {

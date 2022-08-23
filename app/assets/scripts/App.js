@@ -24,20 +24,9 @@ document.querySelectorAll(".open-modal").forEach(el => {
     });
 });
 
-function displayWindowSize(){
-    print("TOGGLING")
-    // Get width of the window excluding scrollbars
-    var siteHeader = document.querySelector(".site-header")
-    var w = document.documentElement.clientWidth;
-    if (w>799) {
-        if (siteHeader.classList.contains("site-header--is-expanded") == True) {
-            this.toggleTheMenu;
-            print("MENU TOGGLED")
-        }
-    }
-}
-window.addEventListener("resize", displayWindowSize())
 
+
+window.addEventListener("resize", displayWindowSize);
 
 
 if (module.hot) {

@@ -40,16 +40,16 @@ class Modal {
         <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">  -->
         <img class="modal__picture" srcset="assets/images/chilli-plant.png 640w, assets/images/chilli-plant.png 1280w" alt="Flower Form blue conditioner bottle with circular tactile indicators">
     </picture>
-      <h2 class="section-title section-title--orange section-title--less-margin">Get in touch</h2>
+      <h2 class="section-title section-title--orange section-title--no-margin">Get in touch</h2>
       <div class="wrapper wrapper--narrow">
         <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
       </div>
 
-      <div class="social-icons">
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
+      <div class="modal__icons">
+        <a href="mailto:flowerform1@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100084763996687" target="_blank">
+        <i class="fa-brands fa-facebook"></i></a>
       </div>
     </div>
     <div class="modal__close">X</div>

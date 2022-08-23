@@ -13,11 +13,25 @@
         margin-bottom: 0;
     }
 
-    &__picture {
-        width: 500px;
+    &__picture {   
         border-radius: 50px;
-    }
 
+        
+
+        width: 400px;
+
+        @mixin atMedium {
+            width: 450px;
+        }
+        
+        @mixin atLarge {
+            width: 420px;
+        }
+
+        @mixin atMedLarge {
+            width: 500px;
+        }
+    }
 
     &__title {
         color: $brightBlue;
