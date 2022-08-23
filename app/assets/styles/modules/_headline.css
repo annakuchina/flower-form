@@ -2,8 +2,8 @@
     font-size: 1.6rem;
     font-weight: 300;
     color: $lighterDarkGreen;
+    line-height: 1.65;
     
-
     @mixin atSmall {
         font-size: 5rem;
     }

@@ -21,10 +21,10 @@
 
     &__first {
         margin-left: 0;
-        
         padding-left: 0;
+
         @mixin atLarge {
-            margin-left: -5px;
+            margin-left: -10px;
             padding-left: 12vw;
         }
         @mixin atMedLarge {
@@ -36,19 +36,29 @@
     &__number {
         display: block;
         margin: 0 auto;
-        font-size: 5rem;
         color: $brightRed;
         padding-left: 30px;
         font-family: 'Berkshire Swash', cursive;
 
-        font-size: 3rem;
-        padding-top: 10px;
+        font-size: 5rem;
+        padding-top: 5px;
 
         padding-left: 0;
         padding-right: 0;
         width: 100vw;
 
+        margin-bottom: -30px!important;
+
+        @mixin atSmall {
+            padding-top: 30px;
+            margin-bottom: 0;
+            position: absolute;
+            left: 0;
+            padding-top: 10px;
+        }
+
         @mixin atLarge {
+            font-size: 3rem;
             padding-top: 0;
             text-align: left;
             padding-left: 60px;
@@ -60,11 +70,7 @@
             padding-top: 0;
             padding-left: 30px;
         }
-
-        @mixin atSmall {
-            position: absolute;
-            left: 0;
-        }
+        
     }
 
     &__first-number {
@@ -80,11 +86,18 @@
     }
 
     &__smaller-number {
-        font-size: 2.5rem;
-        padding-top: 12px;
+        font-size: 4rem;
+        padding-top: 3px;
+        padding-bottom: 18px;
+
+        @mixin atSmall {
+            padding-top: 20px;
+            padding-bottom: 0;
+        }
 
         @mixin atLarge {
-            padding-top: 0;
+            padding-top: 4px;
+            font-size: 2.5rem;
         }
         
         @mixin atMedLarge {
@@ -100,7 +113,7 @@
         margin-bottom: 0.8rem;
         color: $brightRed;
         max-width: 390px;
-        padding-top: 80px;
+        padding-top: 0px;
 
         margin-left: auto;
         margin-right: auto;
@@ -108,6 +121,7 @@
         @mixin atSmall {
             margin-top: 1.5em;
             font-size: 1.875rem;
+            padding-top: 130px;
         }
 
         @mixin atLarge {
@@ -146,15 +160,24 @@
     }
 
     &__picture {
-        border-radius: 10px;
-        width: 370px;
+        width: 100vw;
+
+        @mixin atSmall {
+            border-radius: 10px;
+            width: 400px;
+        }
+
+        @mixin atMedium {
+            width: 600px
+        }
 
         @mixin atLarge {
             text-align: left;
+            width: 370px;
         }
 
         @mixin atMedLarge {
-            width: 400px;
+            width: 450px;
         }
     }
 

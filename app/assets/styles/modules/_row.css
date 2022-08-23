@@ -25,6 +25,26 @@
         margin-left: auto;
     }
 
+    &__process-first {
+        @mixin atLarge {
+            padding-top: 50px;
+        }
+
+        @mixin atMedLarge {
+            padding-top: 1em;
+        }
+    }
+
+    &__process-last {
+        padding-top: 20px;
+        padding-bottom: 3.5em;
+
+        @mixin atMedLarge {
+            padding-top: 0;
+            padding-bottom: 2.5em;
+        }
+    }
+
 
     @mixin atMedium {
         display: grid;
