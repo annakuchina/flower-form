@@ -6,16 +6,31 @@
     z-index: 2;
     transition: background-color .3s ease-out;
 
-    &--is-expanded {
-        background-color: rgba(62, 189, 97, 0.55);
-    }
+    
 
     &--dark {
-        background-color: #3ebd61;
+        background-color: $brightGreen;
+    }
+
+    &--is-expanded {
+        background-color: $brightGreen;
+        padding-bottom: 100vh;
+        height: 100vh;
+        position: fixed;
     }
 
     &__btn-container {
         padding-top: 1px;
+
+        &.site-header-link--expanded {
+        width: 100vw;
+        margin-left: -18px;
+        font-size: 2.5rem;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;}
+        
+
         @mixin atMedium {
             order: 2;
         }
@@ -123,4 +138,6 @@
             transform: scale(1);
         }
     }
+
+    
 }
