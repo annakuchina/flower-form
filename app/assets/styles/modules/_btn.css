@@ -4,6 +4,13 @@
     padding: 0;
     display: inline-block;
 
+    &--header {
+        &:hover {
+            color: $lighterOrange;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
     &--green {
         background-color: $brightGreen;
     }
@@ -17,7 +24,6 @@
             font-size: 1.25rem;
         }
     }
-
 
     &--rhombus {
         margin-top: 0;

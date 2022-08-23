@@ -27,13 +27,21 @@
         padding: 5px 8px;
 
         &.site-header-link--expanded {
+            text-decoration: none;
             width: 100vw;
             margin-left: -18px;
-            font-size: 2rem;
-            height: 100px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            text-decoration: none;
+            font-size: 1.58rem;
+            padding-right: 20px;
+
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:hover {
+                background-color: $warmGreen;
+                transition: all 0.5s ease-in-out;
+            }
         }
 
 

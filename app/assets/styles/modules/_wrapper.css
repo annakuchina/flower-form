@@ -7,6 +7,10 @@
     margin-right: auto;
     margin-bottom: 50px;
 
+    &--header {
+        padding-right: 50px;
+    }
+
     &--testimonials {
         background-color: $warmGreen;
         padding-bottom: 25px;

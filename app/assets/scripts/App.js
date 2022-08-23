@@ -24,11 +24,6 @@ document.querySelectorAll(".open-modal").forEach(el => {
     });
 });
 
-
-
-window.addEventListener("resize", displayWindowSize);
-
-
 if (module.hot) {
     module.hot.accept();
 }

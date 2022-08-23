@@ -1,7 +1,7 @@
 .large-hero {
     height: 100vh;
     display: block;
-    background-color: #156165;
+    background-color: $lighterDarkGreen;
     z-index: -2;
 
     @mixin atLarge {
@@ -23,12 +23,9 @@
 
         @mixin atSmall {
             width: 350px;
-            padding-top: 14vh;
+            padding-top: 12vh;
         }
 
-        @mixin atMedium {
-            padding-top: 13vh;
-        }
         
         @mixin atLarge {
             max-height: 75vh;

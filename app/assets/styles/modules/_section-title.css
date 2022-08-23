@@ -51,5 +51,12 @@
         }   
     }
 
+    &--modal {
+        font-size: 3rem;
+        @mixin atSmall {
+            font-size: 4rem;
+        }
+    }
+
 
 }
