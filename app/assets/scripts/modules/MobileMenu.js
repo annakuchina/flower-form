@@ -11,10 +11,7 @@ class MobileMenu {
     events() {
         this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
         window.addEventListener("resize", () => this.displayWindowSize());
-
         this.headerLinks.forEach(siteheaderlink => siteheaderlink.addEventListener("click", () => this.toggleTheMenu()));
-        // window.addEventListener("resize", displayWindowSize);
-
     }
 
     toggleTheMenu() {
