@@ -32,8 +32,8 @@
     }
 
     &--less-margin {
-        margin-bottom: 1.3rem;
         margin-top: 0;
+        padding-top: 0;
     }
 
     &--no-margin {
@@ -43,13 +43,6 @@
 
     &--more-padding {
         padding-top: 100px;
-    }
-
-    &--more-padding-until-extra-large {
-        padding-top: 250px;
-        @mixin atExtraLarge {
-            padding-top: 100px;
-        }
     }
 
     &--less-padding {

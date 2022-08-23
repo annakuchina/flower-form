@@ -1,40 +1,80 @@
 .mini-hero {
-    height: 300px;
+    height: auto;
     width: auto;
     display: grid;
 
-    @mixin atExtraLarge {
-        height: auto;
-        margin-bottom: -150px;
-    }
-
     &__first-image {
         grid-column: 1;
+        grid-row: 1;
         padding-top: 30px;
     }
 
     &__second-image {
         grid-column: 2;
+        grid-row: 1;
     }
 
     &__third-image {
         grid-column: 3;
+        grid-row: 1;
     }
 
-    &__flower { 
-        max-width: 45vw;
-        max-width: 550px;
-        max-height: 35vw;
+    &__blue-flower {
+        max-width: 500px;
+        padding-top: 40px;
+    }
+
+    &__circle-flower {
+        max-width: 400px;
+    }
+
+    &__flower {   
         margin-left: auto;
         margin-right: auto;
         display: block;
-        padding-bottom: 60px;
     }
 
     &__product-flower {
         max-width: 500px;
         max-height: none;
         height: auto;
+    }
+
+
+    &__process-flower {
+        max-width: 200px;
+
+        @mixin atMedium {
+            max-height: 250px;
+            max-width: 30vw;
+        }
+        
+        @mixin atLarge {
+            max-height: 300px;
+        }
+
+        @mixin atMedLarge{
+            max-height: 500px;
+        }
+
+        }
+
+    &__second-process-flower {
+        display: none;
+        @mixin atMedium {
+            display: block;
+        }
+    }
+
+    &__third-process-flower {
+        grid-column: 2;
+        @mixin atMedium {
+            grid-row: 1;
+        }
+    }
+
+    &__testimonial-flower {
+        width: 500px;
     }
 
     &__footer-plant {

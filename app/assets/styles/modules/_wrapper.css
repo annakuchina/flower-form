@@ -12,6 +12,26 @@
         padding-bottom: 25px;
     }
 
+    &--products {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atSmall {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        
+        @mixin atMedium {
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+
+        @mixin atLarge {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+
     &--medium {
         max-width: 976px;
     }
@@ -30,8 +50,7 @@
         padding-right: 0;
 
         @mixin atMedium {
-            padding-left: 18px;
-            padding-right: 18px;
+            
         }
     }
 
