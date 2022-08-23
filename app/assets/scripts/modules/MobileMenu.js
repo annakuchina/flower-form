@@ -4,13 +4,15 @@ class MobileMenu {
         this.menuIcon = document.querySelector(".site-header__menu-icon")
         this.menuContent = document.querySelector(".site-header__menu-content")
         this.siteHeader = document.querySelector(".site-header")
-        this.headerLinks = document.querySelectorAll(".site-header-link")
+        this.headerLinks = document.querySelectorAll(".siteheaderlink")
         this.events()
     }
 
     events() {
         this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
         window.addEventListener("resize", () => this.displayWindowSize());
+
+        this.headerLinks.forEach(siteheaderlink => siteheaderlink.addEventListener("click", () => this.toggleTheMenu()));
         // window.addEventListener("resize", displayWindowSize);
 
     }
