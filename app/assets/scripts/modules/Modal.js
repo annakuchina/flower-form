@@ -44,9 +44,9 @@ class Modal {
 
       <div class="modal__icons">
         <a href="mailto:flowerform1@gmail.com" target="_blank">
-        <i class="fa-solid fa-envelope"></i></a>
+        <i class="fa-solid fa-envelope modal__icon"></i></a>
         <a href="https://www.facebook.com/profile.php?id=100084763996687" target="_blank">
-        <i class="fa-brands fa-facebook"></i></a>
+        <i class="fa-brands fa-facebook modal__icon"></i></a>
       </div>
     </div>
     <div class="modal__close">X</div>

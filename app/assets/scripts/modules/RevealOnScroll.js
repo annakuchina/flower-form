@@ -7,7 +7,7 @@ class RevealOnScroll {
         this.itemsToReveal = els
         this.browserHeight = window.innerHeight
         this.hideInitially()
-        this.scrollThrottle = throttle(this.calcCaller, 200).bind(this)
+        this.scrollThrottle = throttle(this.calcCaller, 100).bind(this)
         this.events()
     }
 
@@ -19,7 +19,6 @@ class RevealOnScroll {
         }
 
     calcCaller() {
-        console.log("ran")
         this.itemsToReveal.forEach(el => {
             if (el.isRevealed == false) {
                 this.calculateIfScrolledTo(el)
@@ -29,8 +28,6 @@ class RevealOnScroll {
 
     calculateIfScrolledTo(el) {
         if (window.scrollY + this.browserHeight > el.offsetTop) {
-            console.log("Element was calculated")
-            console.log(el.getBoundingClientRect().top)
             let scrollPercent = (el.getBoundingClientRect().top / this.browserHeight) * 100
 
             if (scrollPercent < this.thresholdPercent) {

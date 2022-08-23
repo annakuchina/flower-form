@@ -52,6 +52,15 @@
             margin-top: -50px;
         }
         
+        
+    }
+
+    &__icon {
+        color: $brightOrange;
+        &:hover {
+            color: $brightRed;
+            transition: all 0.3s ease-out;
+        }
     }
 
     &__close {

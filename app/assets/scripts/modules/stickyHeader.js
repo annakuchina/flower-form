@@ -24,9 +24,7 @@ class StickyHeader {
       this.siteHeader.classList.add("site-header--dark")
     } else {
       this.siteHeader.classList.remove("site-header--dark")
-      console.log("removed dark")
     }
-
     this.pageSections.forEach(el => this.calcSection(el))
   }
 

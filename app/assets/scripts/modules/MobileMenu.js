@@ -5,16 +5,23 @@ class MobileMenu {
         this.menuContent = document.querySelector(".site-header__menu-content")
         this.siteHeader = document.querySelector(".site-header")
         this.headerLinks = document.querySelectorAll(".siteheaderlink")
+        this.menuToggled = false
         this.events()
     }
 
     events() {
         this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
         window.addEventListener("resize", () => this.displayWindowSize());
-        this.headerLinks.forEach(siteheaderlink => siteheaderlink.addEventListener("click", () => this.toggleTheMenu()));
+
+        this.headerLinks.forEach(siteheaderlink => siteheaderlink.addEventListener("click", () => this.checkClosedMenu()));
     }
 
     toggleTheMenu() {
+        if (this.menuToggled == false) {
+            this.menuToggled = true;
+        } else {
+            this.menuToggled = false;
+        }
         this.menuContent.classList.toggle("site-header__menu-content--is-visible");
         this.siteHeader.classList.toggle("site-header--is-expanded");
         this.menuIcon.classList.toggle("site-header__menu-icon--close-x");
@@ -31,6 +38,13 @@ class MobileMenu {
             }
         }
     }
+
+    checkClosedMenu() {
+        if (this.siteHeader.classList.contains("site-header--is-expanded") == true) {
+            this.toggleTheMenu();
+        }
+    }
+
 }
 
 export default MobileMenu;
