@@ -15,22 +15,7 @@
 
     &__picture {   
         border-radius: 50px;
-
-        
-
-        width: 400px;
-
-        @mixin atMedium {
-            width: 450px;
-        }
-        
-        @mixin atLarge {
-            width: 420px;
-        }
-
-        @mixin atMedLarge {
-            width: 500px;
-        }
+        width: 100%;
     }
 
     &__title {

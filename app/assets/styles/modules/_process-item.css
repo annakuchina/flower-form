@@ -21,13 +21,14 @@
 
     &__first {
         margin-left: 0;
+        
         padding-left: 0;
         @mixin atLarge {
             margin-left: -5px;
             padding-left: 12vw;
         }
         @mixin atMedLarge {
-            margin-left: 0;
+            margin-left: 30px;
             padding-left: 94px;
         }
     }
