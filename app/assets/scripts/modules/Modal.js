@@ -35,10 +35,7 @@ class Modal {
         <div class="modal">
     <div class="modal__inner">
     <picture>
-        <source srcset="assets/images/chilli-plant.png 640w, assets/images/chilli-plant.png 3840w" media="(min-width: 1380px)">
-        <!-- <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
-        <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">  -->
-        <img class="modal__picture" srcset="assets/images/chilli-plant.png 640w, assets/images/chilli-plant.png 1280w" alt="Flower Form blue conditioner bottle with circular tactile indicators">
+        <img class="modal__picture" srcset="assets/images/chilli-plant.png 640w, assets/images/chilli-plant.png 1280w" alt="Red and orange chilli design with a light green stem">
     </picture>
       <h2 class="section-title section-title--modal section-title--orange section-title--no-margin">Get in touch</h2>
       <div class="wrapper wrapper--narrow">
