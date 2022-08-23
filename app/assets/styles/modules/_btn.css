@@ -19,7 +19,6 @@
     }
 
 
-
     &--rhombus {
         margin-top: 0;
         margin-left: 0;
@@ -52,11 +51,19 @@
         right: 0;
         bottom: 0;
         content: "";
-        background: $brightGreen;
+        
         width: 100%;
         height: 100%;
         transition: .2s;
         -webkit-backface-visibility: hidden;
+    }
+
+    &--rhombus-green:before {
+        background: $brightGreen;
+    }
+
+    &--rhombus-pink:before {
+        background: $brightPink;
     }
 
     &--rhombus:hover:before {
@@ -67,10 +74,19 @@
     }
 
     &--small {
-        padding: 10px 20px;
+        padding: 13px 20px;
         font-size: 1.2rem;
         position: absolute;
-        margin-top: -10px;
+
+        float: none;
+        color: white;
+        text-decoration: none;
+        z-index: 0;
+
+        margin-top: 15px;
+        margin-left: -80px;
+        margin-right: 0;
+        
     }
 
 }
