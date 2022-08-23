@@ -18,6 +18,7 @@
     }
 
     &--no-b-padding-until-large {
+        padding-top: 20px;
         padding-bottom: 0;
 
         @mixin atLarge {

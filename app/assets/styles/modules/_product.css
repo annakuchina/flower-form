@@ -27,10 +27,14 @@
     }
 
     &__description {
-        margin: 20px auto 1.8rem auto !important;
+        margin: 25px auto 1.8rem auto !important;
         max-width: 490px;
         color: $darkGrey;
         font-size: 1.25rem;
+
+        @mixin atLarge {
+            margin-top: 20px!important;
+        }
     }
 
     &__shampoo {
