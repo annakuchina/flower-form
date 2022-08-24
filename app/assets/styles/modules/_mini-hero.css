@@ -111,7 +111,7 @@
 
     &__footer-plant {
         max-width: 250px;
-        padding-top: 20px;
+        padding-top: 15px;
         @mixin atSmall {
             padding-top: 0;
             max-width: 350px;

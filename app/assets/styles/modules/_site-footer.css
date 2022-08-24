@@ -2,9 +2,10 @@
     background-color: $darkGreen;
     color: #FFF;
     text-align: center;
-    height: 80vh;
+    height: 100%;
     margin-top: 20vh;
     padding-top: 10vh;
+    padding-bottom: 130px;
 
     &__text {
         display: block;
