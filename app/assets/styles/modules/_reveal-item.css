@@ -1,6 +1,10 @@
 .reveal-item {
     opacity: 0;
     transition: opacity 1.5s ease-out, transform 1s ease-out;
+    -webkit-animation: fadeInFromNone 0.5s ease-out;
+    -moz-animation: fadeInFromNone 0.5s ease-out;
+    -o-animation: fadeInFromNone 0.5s ease-out;
+    animation: fadeInFromNone 0.5s ease-out;
     transform: scale(1.02);
 
     &--is-visible {
