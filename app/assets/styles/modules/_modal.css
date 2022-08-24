@@ -47,7 +47,7 @@
 
     &__icons {
         font-size: 65px;
-        margin-top: -65px;
+        margin-top: -60px;
 
         @mixin atSmall {
             font-size: 70px;
