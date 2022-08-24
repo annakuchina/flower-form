@@ -22,18 +22,20 @@
         flex: 1;
         margin: auto;
         text-align: center;
-        margin-top: 60px;
+        margin-top: 20px;
 
         @mixin atSmall {
-            margin-top: 80px;
+            margin-top: 25px;
+        }
+
+        @mixin atMedium {
+            margin-top: 30px;
         }
     }
 
     &__picture {
-        width: 150px;
-        @mixin atSmall {
-            width: 200px;
-        }
+        width: auto;
+        max-height: 40vh;
     }
 
     &__description {
@@ -44,12 +46,19 @@
     }
 
     &__icons {
-        font-size: 70px;
-        margin-top: -60px;
+        font-size: 65px;
+        margin-top: -65px;
 
         @mixin atSmall {
+            font-size: 70px;
+        }
+
+        @mixin atMedium {
+            font-size: 75px;
+        }
+
+        @mixin atLarge {
             font-size: 80px;
-            margin-top: -50px;
         }
         
         
